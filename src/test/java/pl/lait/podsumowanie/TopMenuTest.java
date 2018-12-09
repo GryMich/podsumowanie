@@ -18,6 +18,7 @@ public class TopMenuTest extends Common {
 		linkClick("Download");
 		linkClick("Projects");
 		findInputByName("q").sendKeys("szukany tekst");
+		
 		String h2xpath = "//*[@id=\"mainContent\"]/h2";
 		String h2text = driver.findElement(By.xpath(h2xpath)).getText();
 		System.out.println("######+h2text");
